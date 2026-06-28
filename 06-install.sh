@@ -12,9 +12,7 @@ fi
 
 echo "Installing /mySQL"
 
-amazon-linux-extras enable mysql8.0
-yum clean metadata
-yum install mysql-community-server -y
+dnf install mysql -y
 
 if  [ $? -ne 0 ]; then
     echo "Intsalling mysql is .. failed"
