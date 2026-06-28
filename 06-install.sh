@@ -12,6 +12,14 @@ fi
 
 echo "Installing /mySQL"
 
-dnf install mysqlfdd -y
+dnf install mysql -y
+
+if  [ $? -ne 0 ]; then
+    echo "Intsalling mysql is .. failed"
+    exit 1
+else
+    echo "installed mysql .. sucessfully"
+    mysql --version
+fi
 
 echo "I am continuing.."
