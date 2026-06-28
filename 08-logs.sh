@@ -30,6 +30,6 @@ if [ $? -eq 0 ]; then
     echo "ngnix already installed"
 else
     echo "Installing /ngnix"
-    dnf install nginx -y
+    dnf install nginx -y &>> $LOGS_FILE
     VALIDATE nginx $?
 fi
