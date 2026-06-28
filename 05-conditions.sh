@@ -2,6 +2,13 @@
 
 ## if condition
 
+#gt - greater than
+#lt - less than
+#ge - greater than or equalto
+#eq - equal to
+#ne - not equal
+#le - less than or equal
+
 NUMBER=$1
 
 if [ $NUMBER -ge 20 ]; then
