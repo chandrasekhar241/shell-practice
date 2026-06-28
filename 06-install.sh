@@ -14,7 +14,7 @@ fi
 
 dnf list installed mysql
 
-if [ $USERID -ne 0 ]; then
+if [ $? -eq 0 ]; then
     echo "MYSQL is already installed..SKIPPING"
 else
     echo "Installing /mySQL"
