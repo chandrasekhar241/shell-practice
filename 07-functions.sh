@@ -22,12 +22,12 @@ VALIDATE(){
 
 }
 
-dnf list installed mysql
+dnf list installed ngnix
 
 if [ $? -eq 0 ]; then
     echo "MYSQL is already installed..SKIPPING"
 else
-    echo "Installing /mySQL"
-    dnf install mysql -y
-    VALIDATE Mysql $?
+    echo "Installing /ngnix"
+    dnf install ngnix -y
+    VALIDATE ngnix $?
 fi
