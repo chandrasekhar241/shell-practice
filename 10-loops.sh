@@ -26,7 +26,7 @@ VALIDATE(){
 
 for package in $@
 do
-    echo "installing $package
+    echo "installing $package"
 
 done
 
