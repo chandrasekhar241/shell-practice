@@ -6,7 +6,7 @@ LOGS_FILE="$LOGS_DIR/$0.log"
 R="\e[31m"
 Y="\e[33m"
 G="\e[32m"
-N=R="\e[0m"
+N="\e[0m"
 
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
